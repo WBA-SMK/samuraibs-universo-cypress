@@ -1,0 +1,17 @@
+{
+  "name": "samuraibs-tests",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "version": "1.0.0",
+  "description": "Projeto de Testes de Aceitação de ponta a ponta em Cypress",
+  "main": "index.js",
+  "author": "Samuel Santos",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^7.3.0",
+    "cypress": "^9.7.0",
+    "cypress-real-events": "^1.7.1",
+    "pg": "^8.7.3"
+  }
+}
