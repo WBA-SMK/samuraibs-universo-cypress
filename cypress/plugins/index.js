@@ -21,15 +21,8 @@ const { Pool } = require('pg')
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-
-  const pool = new Pool({ // instancia classe Pool
-
-    host: 'fanny.db.elephantsql.com',
-    user: 'gegbxjcl',
-    password: 'yt-yMdywJl5Rzihf4qUwd04dr2Z92Bb3',
-    port: 5432
-
-  })
+  const configJson = require(config.configFile)
+  const pool = new Pool(configJson.dbConfig)
 
   on('task', { //aqui nós vamos criar as tasks (tarefas) default do cypress
 

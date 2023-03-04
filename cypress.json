@@ -1,5 +1,12 @@
 {
-    "baseUrl":"http://localhost:3000",
+    "baseUrl": "http://localhost:3000",
     "viewportWidth": 1440,
-    "viewportHeight": 900
+    "viewportHeight": 900,
+    "dbConfig": {
+        "host": "fanny.db.elephantsql.com",
+        "user": "gegbxjcl",
+        "password": "yt-yMdywJl5Rzihf4qUwd04dr2Z92Bb3",
+        "database": "gegbxjcl",
+        "port": 5432
+    }
 }
